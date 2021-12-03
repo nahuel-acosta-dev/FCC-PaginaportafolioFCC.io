@@ -1,0 +1,309 @@
+body{
+    font-size: 1em;
+    overflow: auto;
+}
+/*SECTION PRINCIPAL*/
+.welcome-section{
+    height: 100vh;
+    overflow-y:hidden;
+    background-color: black;
+    background-image: url("../images/keyboard-5017973_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 31em;
+}
+
+.title{
+    margin-top: 6.2em;
+    color: rgb(218, 79, 79);
+    text-align: center;
+}
+
+.bottom-proyect{
+    display: flex;
+    justify-content: center;
+    margin-top: 18.75em;
+    margin-bottom: 3em;
+}
+
+button{
+    width: 12.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn-pers{
+    animation-name: cambiarColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes cambiarColor {   
+    0%{ border-color: #ffff00;
+        color:#ff00ff; 
+    }
+    25%{ border-color: #0000ff;
+        color: #ba55d3;
+    }
+    50% { border-color: #7fff00;
+          color: #7fff00;
+    }
+    75% {border-color: #ba55d3;
+         color:   #0000ff;     
+    }  
+    100% { border-color:#ff00ff;
+            color: #ffff00;
+    } 
+     
+ }
+ .btn-pers:hover{
+    color: white!important;
+    border-color: red!important;
+}
+ 
+/*FIN SECTION PRINCIPAL*/
+
+/*HEADER*/
+header{
+    background-color:rgba(35, 13, 63, 0.6);
+}
+ul > li{
+    float: right;
+}
+
+nav{
+    position:fixed;
+}
+/*FIN HEADER*/
+
+
+/*PORTAFOLIO*/
+
+main{
+    overflow-y: scroll;
+}
+
+main{
+    background-image: linear-gradient(
+        rgba(35, 13, 63, 0.6),
+        rgba(101, 82, 124, 0.6)
+      ), 
+        url("../images/backdrop-874452_1280.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.main-title > h2{
+    color: white;
+}
+
+img { color:rgb(241, 24, 24)!important; 
+    filter:alpha; 
+    opacity: 1 !important;}
+
+.proyects {
+    display: flex;
+    justify-content: center;
+}
+
+.proyects > div{
+    text-align: center;
+}
+a > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    height: 30px;
+
+}
+.name-1{
+    background-color: rgb(75, 221, 17, 0.5)!important;
+}
+
+.name-2{
+    background-color: rgb(219, 130, 13, 0.5);
+}
+
+.name-3{
+    background-color: rgba(53, 44, 182, 0.5);
+}
+
+.name-4{
+    background-color: rgb(219, 12, 12, 0.5);
+}
+
+.name-5{
+    background-color: rgba(39, 190, 201, 0.5);
+}
+
+.name-6{
+    background-color: rgba(44, 204, 151, 0.5);
+}
+
+.proyects > div:nth-child(2), .proyects > div:nth-child(3){
+    margin-left: 100px;
+}
+
+.profile{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+/*FIN PORTAFOLIO*/
+
+/*CONTACT*/
+.contact{
+    margin-top: 20px;
+    height: 12.5em;
+    background-color: black;
+}
+.text{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+.redes{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+svg:nth-child(1){
+    margin-left: 30px;
+}
+
+svg{
+    color: #1874ec;
+    margin-right: 30px;
+    animation-name: icon-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+svg:hover{
+    transform: scale(2);
+}
+.icon-5:hover{
+    transform: scale(2)!important;
+}
+
+@keyframes icon-color {   
+    0% { 
+          color: #7fff00;
+    }
+
+    25%{
+        color: #ff00ff;
+    }
+    70%{
+        color: red;
+    }
+
+    90% { 
+        color: #ffff00;
+    } 
+}
+.icon-1:hover{
+    color: blue!important;
+}
+
+
+.icon-2:hover{
+    color: #1565c0!important;
+}
+
+.icon-3:hover, .icon-4:hover, .icon-5:hover{
+    color: white!important;
+}
+
+/*FIN CONTACT*/
+
+/*FOOTER*/
+footer{
+    background-color: black;
+    border-top: 2px solid rgb(196, 37, 37);
+    height: 3.7em;
+}
+footer > p{
+    color: white;
+    margin-top: 10px;
+    float: right;
+}
+/*FIN FOOTER*/
+
+
+/*-----------Medium-----------*/
+@media(max-width: 768px){
+/*SECTION PRINCIPAL*/
+    .welcome-section{
+    background-size: 27em;
+    }
+    .bottom-proyect{
+        margin-top: 19em;
+    }
+/*FIN SECTION PRINCIPAL*/
+
+/*PORTAFOLIO*/
+.proyects > div:nth-child(2), .proyects > div:nth-child(3){
+    margin-left: 30px;
+}
+/*FIN PORTAFOLIO*/
+}
+
+
+/*-----------Small-----------*/
+
+
+@media(max-width: 576px){
+/*SECTION PRINCIPAL*/
+    .welcome-section{
+        background-size: 22em;
+    }
+
+    button{
+        width: 8em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+/*FIN SECTION PRINCIPAL*/
+
+/*PORTAFOLIO*/
+.proyects > div:nth-child(2), .proyects > div:nth-child(3){
+    margin-left: 10px;
+}
+.project-title{
+    font-size: 70%;
+}
+
+/*FIN PORTAFOLIO*/
+
+/*contacts*/
+svg{
+    width: 70%;
+    height: 70%;
+}
+
+svg:nth-child(1){
+    margin-left: 10px;
+}
+}
+
+@media (max-height: 540px){
+ .bottom-1, .bottom-2{
+     position: relative;
+     bottom: 80px;
+ }
+}
